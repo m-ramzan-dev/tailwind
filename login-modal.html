@@ -27,13 +27,93 @@
         class="relative flex flex-col m-6 space-y-10 bg-white rounded-2xl shadow-2xl md:flex-row md:space-y-0 md:m-0"
       >
         <!-- Left Side Content -->
-        <div class="flex flex-col p-6 md:p-20">Login</div>
+        <div class="flex flex-col p-6 md:p-20">
+          <!-- Top Content -->
+          <h2 class="font-mono font-bold text-4xl mb-5">Login</h2>
+          <p class="max-w-sm font-sans font-light text-gray-600 mb-12">
+            Login to your account to upload or download pictures, videos or
+            music.
+          </p>
+          <input
+            type="text"
+            placeholder="Enter your email address"
+            class="p-6 border border-grey-300 rounded-md placeholder:font-light placeholder:font-sans"
+          />
+          <!-- Middle Content -->
+          <div
+            class="flex flex-col space-y-6 mt-4 items-center justify-between md:flex-row md:space-y-0"
+          >
+            <div class="font-thin text-cyan-700">Forgot Password?</div>
+            <button
+              class="w-full md:w-auto justify-center flex items-center bg-cyan-700 space-x-4 p-6 font-sans font-bold text-white rounded-md shaow-sm shadow-cyan-100 duration-150 border transition hover:bg-opacity-90 hover:shadow-lg hover:-translate-y-0.5"
+            >
+              <span>Next</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-7"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <line x1="13" y1="18" x2="19" y2="12" />
+                <line x1="13" y1="6" x2="19" y2="12" />
+              </svg>
+            </button>
+          </div>
+          <!-- Bottom Content -->
+          <!-- Border -->
+          <div class="mt-8 border-b border-grey-300"></div>
+          <div class="font-thin font-sans text-center text-grey-500 py-3">
+            or login with
+          </div>
+          <!-- Bottom Button Container -->
+          <div
+            class="flex flex-col space-y-4 space-x-0 items-center justify-center md:flex-row md:space-y-0 md:space-x-4"
+          >
+            <button
+              class="w-full flex flex-row items-center justify-center py-2 space-x-3 border-grey-300 border rounded shadow-sm md:w-1/2 hover:bg-opacity-30 hover:-translate-y-0.5 hover:shadow-lg transition duration-150"
+            >
+              <img src="assets/img/facebook.png" alt="" class="w-9" />
+              <span class="font-thin">Facebook</span>
+            </button>
+            <button
+              class="w-full flex flex-row items-center justify-center py-2 space-x-3 border-grey-300 border rounded shadow-sm md:w-1/2 hover:bg-opacity-30 hover:-translate-y-0.5 hover:shadow-lg transition duration-150"
+            >
+              <img src="assets/img/google.png" alt="" class="w-9" />
+              <span class="font-thin">Google</span>
+            </button>
+          </div>
+        </div>
         <!-- Right Side Image -->
         <img
           src="assets/img/login_image.jpg"
           alt=""
           class="w-[340px] hidden md:block"
         />
+        <!-- Close Button -->
+        <div
+          class="absolute flex items-center justify-center -top-5 right-5 h-10 w-10 rounded-full bg-gray-200 md:top-4 md:bg-white hover:-translate-y-0.5 transition duration-150"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 text-black group-hover:text-gray-600"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </div>
       </div>
     </div>
   </body>

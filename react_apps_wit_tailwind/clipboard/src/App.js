@@ -1,24 +1,16 @@
-import logo from "./logo.svg";
-import "./App.css";
+import AccessSection from "./AccessSection/AccessSection";
+import Hero from "./Hero/Hero";
+import QuickSection from "./QuickSection/QuickSection";
+import SnippetSection from "./SnippetSection/SnippetSection";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="font-bold"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Hero />
+      <SnippetSection />
+      <QuickSection />
+      <AccessSection />
+    </>
   );
 }
 
